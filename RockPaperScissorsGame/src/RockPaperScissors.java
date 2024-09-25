@@ -7,8 +7,10 @@ public class RockPaperScissors {
         String rock = "Rock";
         String paper = "Paper";
         String scissors = "Scissors";
+        // prompts user for input
         System.out.print("Choose [r]ock, [p]aper or [s]cissors: ");
         String gamerChoice = scanner.nextLine();
+        // checks the user's input
         String gamerMove;
         if (gamerChoice.equals("r") || gamerChoice.equals("rock")){
             gamerMove = rock;
@@ -20,9 +22,10 @@ public class RockPaperScissors {
             System.out.println("Invalid input. Try again...");
             return;
         }
-
+        // creates a random integer in the range form 0 to 3 exclusive
         Random random = new Random();
         int computerRandomNumber = random.nextInt(3);
+        // checks the computer's move
         String computerMove;
         if (computerRandomNumber == 0){
             computerMove = rock;
@@ -31,7 +34,9 @@ public class RockPaperScissors {
         }else {
             computerMove= scissors;
         }
+        // prints the choice of the computer
         System.out.printf("The computer choose %s.%n", computerMove);
+        // reveal the winner based of the game's rules
         if (gamerMove.equals(computerMove)){
             System.out.println("This game was a draw.");
         } else if (gamerMove.equals(rock) && computerMove.equals(paper)
