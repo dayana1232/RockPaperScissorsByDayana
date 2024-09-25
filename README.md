@@ -12,6 +12,8 @@ The player enters one of the following options:
 The computer chooses a random option the reveals the winner.
 
 SOLUTION
+
 ![image](https://github.com/user-attachments/assets/aa9e0403-2ef2-442c-96de-4ec78462b698)
+
 The programme handles all of this possible situations via series of checks.
 
